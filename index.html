@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thejas Prakash – Operations Manager, Dubai</title>
+<meta name="description" content="Thejas Prakash is a retail operations and admin manager in Dubai with 10+ years of UAE experience in finance, administration and multi-branch operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --ink:#1B2A41; --muted:#5A6B82; --line:#CBD3DF; --accent:#2F5BFF; --accent-ink:#FFFFFF;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#101826;--surface:#17233A;--ink:#E8EDF5;--muted:#9AA9BF;--line:#2B3A55;--accent:#7C9BFF;--accent-ink:#101826}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+header.top .mark{font:700 1.1rem var(--display);text-decoration:none}
+nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;padding:3rem 0 4.5rem}
+.hero h1{font:700 clamp(2.6rem,6.5vw,4.6rem)/1.02 var(--display);letter-spacing:-.02em;margin:0 0 1.25rem}
+.hero p.lead{font-size:1.25rem;max-width:34rem;margin:0 0 2rem;color:var(--muted)}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.5rem;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+
+/* lens: 8 branches around one operation */
+.lens{width:100%;max-width:25rem;justify-self:center;aspect-ratio:1;position:relative}
+.lens svg{width:100%;height:100%;overflow:visible}
+.lens .ring{fill:none;stroke:var(--line);stroke-width:1.5}
+.lens .core{fill:var(--accent)}
+.lens .dot{fill:var(--ink)}
+.lens text{fill:var(--ink);font:600 13px var(--body)}
+.lens .spin{transform-origin:200px 200px;animation:turn 40s linear infinite}
+@keyframes turn{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.lens .spin{animation:none}html{scroll-behavior:auto}}
+
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.7rem,3.5vw,2.3rem)/1.15 var(--display);letter-spacing:-.01em;margin:0 0 1.75rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.25rem}
+.fact{background:var(--surface);padding:1.4rem;border-radius:.75rem;border:1px solid var(--line)}
+.fact b{display:block;font:700 2.4rem/1 var(--display);margin-bottom:.4rem}
+.fact span{color:var(--muted)}
+.about{max-width:42rem}
+.about p{margin:0 0 1rem}
+
+/* timeline: genuinely sequential */
+.timeline{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 2.25rem 1.5rem}
+.timeline li::before{content:"";position:absolute;left:-2.05rem;top:.55rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--accent)}
+.timeline h3{font:700 1.3rem/1.25 var(--display);margin:0}
+.timeline .where{color:var(--muted);margin:.15rem 0 .6rem;font-weight:500}
+.timeline ul{margin:0;padding-left:1.1rem;max-width:42rem}
+.timeline li li{padding:0;margin:.2rem 0}
+.timeline li li::before{display:none}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2rem}
+.skills h3{font:700 1.1rem var(--display);margin:0 0 .6rem}
+.skills ul{margin:0;padding-left:1.1rem}
+.skills li{margin:.25rem 0}
+
+.contact p{max-width:36rem;color:var(--muted);margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+
+@media (max-width:48rem){
+  .hero{grid-template-columns:1fr;padding-top:1.5rem}
+  .lens{max-width:18rem;order:-1;justify-self:start}
+  nav a{margin-left:1rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top">Thejas Prakash</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <h1>I keep eight stores running as one operation.</h1>
+        <p class="lead">Admin and Operations Manager in Dubai. I lead retail branches, teams and costs, backed by more than ten years of finance and administration in the UAE.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#experience">See my experience</a>
+        </div>
+      </div>
+      <div class="lens" role="img" aria-label="Eight branch points arranged in a ring around one central operation">
+        <svg viewBox="0 0 400 400">
+          <circle class="ring" cx="200" cy="200" r="170"/>
+          <circle class="ring" cx="200" cy="200" r="110"/>
+          <circle class="ring" cx="200" cy="200" r="50"/>
+          <circle class="core" cx="200" cy="200" r="30"/>
+          <g class="spin">
+            <circle class="dot" cx="200" cy="30" r="9"/>
+            <circle class="dot" cx="320.2" cy="79.8" r="9"/>
+            <circle class="dot" cx="370" cy="200" r="9"/>
+            <circle class="dot" cx="320.2" cy="320.2" r="9"/>
+            <circle class="dot" cx="200" cy="370" r="9"/>
+            <circle class="dot" cx="79.8" cy="320.2" r="9"/>
+            <circle class="dot" cx="30" cy="200" r="9"/>
+            <circle class="dot" cx="79.8" cy="79.8" r="9"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>What I manage</h2>
+      <div class="facts">
+        <div class="fact"><b>8</b><span>branches across 8 Dubai malls</span></div>
+        <div class="fact"><b>50+</b><span>staff supervised</span></div>
+        <div class="fact"><b>10+</b><span>years of UAE experience</span></div>
+        <div class="fact"><b>Odoo 19</b><span>the system our operations run on</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="about">
+        <h2>About me</h2>
+        <p>I started in finance and receivables in the travel industry, moved into accounting and administration for a building contractor, and now run day-to-day operations for an optical retailer.</p>
+        <p>At JUST OPTIC I manage branch performance, supervise the teams, and negotiate concessions and cost reductions with mall management. I also handle the compliance work that keeps a UAE business moving: VAT, WPS payroll, and government PRO services.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Admin &amp; Operations Manager</h3>
+          <p class="where">JUST OPTIC, Dubai · Aug 2025 to present</p>
+          <ul>
+            <li>Run 8 branches in 8 Dubai malls and supervise 50+ staff.</li>
+            <li>Negotiate concessions and cost reductions with mall management.</li>
+            <li>Oversee admin, HR and PRO work on Odoo 19.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Senior Accountant / Admin</h3>
+          <p class="where">Al Dalil Al Handasi Building Contracting LLC · Apr 2021 to Aug 2025</p>
+          <ul>
+            <li>Managed accounts, VAT and payroll alongside office administration.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Finance Executive / Branch In-Charge</h3>
+          <p class="where">Arooha Tours &amp; Travel UAE · Jan 2018 to Mar 2021</p>
+          <ul>
+            <li>Ran branch finance and day-to-day branch operations.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Finance Executive, Receivables</h3>
+          <p class="where">Musafir.com · Oct 2015 to Jan 2018</p>
+          <ul>
+            <li>Handled receivables and collections.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Operations</h3>
+          <ul>
+            <li>Multi-branch retail management</li>
+            <li>Team supervision</li>
+            <li>Landlord and mall negotiations</li>
+            <li>Cost control</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Finance and compliance</h3>
+          <ul>
+            <li>VAT</li>
+            <li>WPS payroll</li>
+            <li>Receivables</li>
+            <li>MOHRE, GDRFA and ICP PRO work (PRO card holder)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Systems</h3>
+          <ul>
+            <li>Odoo 19</li>
+            <li>QuickBooks, Tally, Microsoft NAV</li>
+            <li>Etravel, Webpro</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>Bachelor of Commerce, University of Kerala</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s talk</h2>
+      <p>I’m based in Dubai and open to operations management roles. The quickest way to reach me is by email.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:tejezprakash@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/tejez/" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Thejas Prakash · Dubai, UAE</footer>
+</div>
+</body>
+</html>
